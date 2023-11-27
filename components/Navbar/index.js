@@ -124,6 +124,11 @@ export default function Navbar({ current, pages }) {
                     </li>
                   );
                 })}
+                  <li className={styles.listItems}>
+                      <a href="https://docs.jetware.net" onClick={handleClick}>
+                          DOCUMENTATION
+                      </a>
+                  </li>
               </ul>
               <div className={styles.socials}>
                 <div>
