@@ -18,8 +18,6 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Set the base path for GitHub Pages
-          NEXT_PUBLIC_BASE_PATH: /
           # Disable telemetry during the build
           NEXT_TELEMETRY_DISABLED: 1
 
@@ -27,5 +25,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch the action should deploy to.
-          folder: out  # The folder the action should deploy.
+          folder: /home/runner/work/web/out  # The folder the action should deploy.
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication.
