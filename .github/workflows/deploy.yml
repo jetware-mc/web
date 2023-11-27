@@ -19,7 +19,7 @@ jobs:
         run: npm run build
         env:
           # Set the base path for GitHub Pages
-          NEXT_PUBLIC_BASE_PATH: /web
+          NEXT_PUBLIC_BASE_PATH: /
           # Disable telemetry during the build
           NEXT_TELEMETRY_DISABLED: 1
 
