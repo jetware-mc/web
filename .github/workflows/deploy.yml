@@ -2,8 +2,8 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Set this to the branch you want to deploy from
+    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
