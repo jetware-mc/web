@@ -5,6 +5,8 @@ on:
     branches: [ "master" ]
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,6 +24,9 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /web
           # Disable telemetry during the build
           NEXT_TELEMETRY_DISABLED: 1
+
+      - name: Export
+        run: npm run export
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
