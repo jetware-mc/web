@@ -6,8 +6,8 @@ import utilStyles from "../styles/utils.module.scss";
 
 import Footer from "./footer";
 
-const name = "Saakshaat Singh";
-export const siteTitle = "**Saakshaat** Singh";
+const name = "Jetware";
+export const siteTitle = "Jetware";
 
 export function GeneralPageLayout({ home, children, title }) {
   return (

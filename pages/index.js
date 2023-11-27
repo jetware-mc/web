@@ -40,16 +40,12 @@ export default function Home({ introData, projectsData }) {
         current={"/"}
         pages={[
           {
-            title: "SAAKSHAAT",
+            title: "JETWARE",
             id: "intro",
           },
           {
-            title: "PROJECTS",
+            title: "TOOLS",
             id: "projects",
-          },
-          {
-            title: "TECH STACKS",
-            id: "skills",
           },
           {
             title: "CONTACT",
@@ -81,11 +77,11 @@ export default function Home({ introData, projectsData }) {
         <div className={utilStyles.centered}>
           <DecoderText
             className={`${utilStyles.mainHeader} ${styles.title}`}
-            text="SAAKSHAAT SINGH"
+            text="JETWARE"
             delay={300}
           />
           <div className={styles.subtitle}>
-            SWE <hr className={utilStyles.lineAfterContent} />
+            OUR TOOLKIT <hr className={utilStyles.lineAfterContent} />
           </div>
           <br />
           <div className={`${styles.typewriter}`}>
@@ -95,7 +91,7 @@ export default function Home({ introData, projectsData }) {
               +
             </text>
             <Typerwriter
-              elements={["Leader", "Creator", "Coffee"]}
+              elements={["Expandability", "Flexibility", "Power", "Potential", "YOU"]}
               cursorColor={"accentDark"}
               speed={20}
             />
@@ -103,39 +99,15 @@ export default function Home({ introData, projectsData }) {
         </div>
       </div>
 
-      <GeneralPageLayout home={true} title={"Saakshaat Singh"} socials={true}>
+      <GeneralPageLayout home={true} title={"About"} socials={true}>
         <div
           id={"intro"}
           className={`${styles.container} ${styles.introSection} ${utilStyles.fullPage}`}
         >
-          <div className={utilStyles.sectionHeader}>Who Am I?</div>
+          <div className={utilStyles.sectionHeader}>What Is This?</div>
           <div className={styles.headerGrid}>
             <div className={`${styles.col} ${styles.introLeft}`}>
-              <h3 className={utilStyles.subTitle}>Hi, I'm Saak</h3>
-              <motion.div
-                drag
-                dragConstraints={{
-                  top: -5,
-                  left: -5,
-                  right: 5,
-                  bottom: 5,
-                }}
-                dragMomentum={true}
-                dragElastic={0.07}
-              >
-                <Image
-                  className={styles.profilePicture}
-                  src="/images/me.png"
-                  width={300}
-                  height={300}
-                  quality={100}
-                  priority={true}
-                  alt={"Saakshaat Picture"}
-                />
-              </motion.div>
-              <div className={styles.pronounciation}>
-                साक्षात \ sa-ahk-SHA-at
-              </div>
+              <h3 className={utilStyles.subTitle}>A Revolution</h3>
               <motion.div
                 lang={"en"}
                 className={styles.introDescription}
@@ -149,15 +121,10 @@ export default function Home({ introData, projectsData }) {
                   boxShadow: "-1px -1px 5px 0.5px rgba(0, 0, 0, 0.5)",
                 }}
               >
-                I like solving problems. Small problems, like this website. Big
-                problems like cloud provisioning. Not too big problems like
-                packaging software. Occasionally, I like beewatching, reading to
-                my dogs and eating mac n cheese.
+                Remember Spigot, the API, the performance, how everything relies on external development to function.
+                  This is the revolution, a set of free & paid tools that integrate with the community and with themselves.
+                  Supporting multiple languages, your budget, and the flexible nature you deserve
               </motion.div>
-            </div>
-            <div className={`${styles.introRight} ${styles.col}`}>
-              <h3 className={utilStyles.subTitle}>What am I doing?</h3>
-              <Gigs gigs={introData} />
             </div>
           </div>
         </div>
@@ -166,19 +133,8 @@ export default function Home({ introData, projectsData }) {
           id={"projects"}
           className={`${styles.container} ${styles.projectsSection} ${utilStyles.fullPage}`}
         >
-          <div className={utilStyles.sectionHeader}>Projects</div>
+          <div className={utilStyles.sectionHeader}>Tools</div>
           <Projects projects={projectsData} />
-        </div>
-        <div
-          id={"skills"}
-          className={`${styles.container} ${styles.skillsSection} ${utilStyles.fullPage}`}
-        >
-          <div className={`${utilStyles.sectionHeader} ${styles.skillsHeader}`}>
-            Skills
-          </div>
-          <div className={styles.headerGrid}>
-            <Skills />
-          </div>
         </div>
         <div id={"contact"}></div>
       </GeneralPageLayout>

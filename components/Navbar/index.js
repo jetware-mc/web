@@ -129,18 +129,7 @@ export default function Navbar({ current, pages }) {
                 <div>
                   <AnimatedSocialIcon
                     brandName="github"
-                    url="https://github.com/saakshaat"
-                    animation="grow"
-                    defaultColor="#f8f8f8"
-                    width="1.5em"
-                    animationDuration={0.2}
-                    // style={{ padding: "3em" }}
-                  />
-                </div>
-                <div>
-                  <AnimatedSocialIcon
-                    brandName="linkedin"
-                    url="https://linkedin.com/in/saakshaat"
+                    url="https://github.com/jetware-mc"
                     animation="grow"
                     defaultColor="#f8f8f8"
                     width="1.5em"

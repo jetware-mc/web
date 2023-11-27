@@ -8,14 +8,14 @@ import { AnimatedSocialIcon } from "react-animated-social-icons";
 export default function Footer() {
   return (
     <div className={`${styles.container} ${utilStyles.padTopMd}`}>
-      <text className={`${styles.title} ${utilStyles.subTitle} ${utilStyles.highlightWhite}`}>Say Hi?</text>
+      <text className={`${styles.title} ${utilStyles.subTitle} ${utilStyles.highlightWhite}`}>Contribute?</text>
       <div className={`${utilStyles.subTitle} ${utilStyles.accentLight}`}>__</div>
       <footer
         className={`${styles.socialsFooter} ${utilStyles.padTopMd} ${utilStyles.quarterPage}`}
       >
         <AnimatedSocialIcon
           brandName="github"
-          url="https://github.com/saakshaat"
+          url="https://github.com/jetware-mc"
           animation="grow"
           defaultColor="#f8f8f8"
           hoverColor="#c39ea0"
@@ -23,57 +23,29 @@ export default function Footer() {
           animationDuration={0.2}
           style={{ padding: "3em" }}
         />
-        <AnimatedSocialIcon
-          brandName="linkedin"
-          url="https://linkedin.com/in/saakshaat"
-          animation="grow"
-          defaultColor="#0e76a8"
-          hoverColor="#c39ea0"
-          width="3em"
-          animationDuration={0.2}
-          style={{ padding: "3em" }}
-        />
-        <AnimatedSocialIcon
-          brandName="instagram"
-          url="https://www.instagram.com/icog_pizza/"
-          animation="grow"
-          defaultColor="#bc2a8d"
-          hoverColor="#c39ea0"
-          width="3em"
-          animationDuration={0.2}
-          style={{ padding: "3em" }}
-        />
-        <AnimatedSocialIcon
-          brandName="facebook"
-          url="https://www.facebook.com/saakshaat.sama"
-          animation="grow"
-          defaultColor="#3b5998"
-          hoverColor="#c39ea0"
-          width="3em"
-          animationDuration={0.2}
-          style={{ padding: "3em" }}
-        />
         <br />
         <br />
         <br />
+          <div className={`${styles.typewriter} ${utilStyles.accentLight}`}>Discord - aBallOfNewsies</div>
+          <br />
+          <br />
+          <br />
         <div className={styles.typewriter}>
           <Typerwriter
             elements={[
-              "Waffles over pancakes",
-              "I'm trilingual",
-              "Benny Harvey R.I.P.",
-              "Every integer > 1 can be represented by 2s and 3s",
-              "Monkey never cramp",
-              "My name means 'In the flesh'",
-              "fav color: #800080",
-              "I suck at frontend :p",
-              "I have a hydroflask",
+              "Open Source",
+                "Please Help",
+                "Seriously, this is a pain",
+                "Powerful",
+                "Full of potential",
+                "Cool",
+                "Thanks to minehut <3"
             ]}
             cursorColor={"white"}
           />
         </div>
         <br />
-        <div className={styles.signature}>Made with &#9829; by Saak</div>
+        <div className={styles.signature}>Made with &#9829; by Jade</div>
       </footer>
     </div>
   );
